@@ -1,18 +1,35 @@
-/* General styles */
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Social media links */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Social links styling */
 .social-links {
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .social-links a {
-    display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .social-links img {
@@ -20,46 +37,82 @@ body {
     height: 50px;
 }
 
-/* Scrolling text */
-.scrolling-text p {
-    font-weight: bold;
-    white-space: nowrap;
+/* Scrolling text styling */
+.scrolling-text {
     overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin-bottom: 20px;  /* Add some space under the scrolling text */
 }
 
-/* Project container */
+.scrolling-text p {
+    animation: scroll-left 10s linear infinite;
+    font-weight: bold;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Project container styles */
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
-/* Individual project box */
 .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
     text-align: center;
-    width: 250px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project a {
+    text-decoration: none;
+    color: #333;
 }
 
 .project img {
-    width: 120px;
-    height: 80px;
-    object-fit: cover;
-    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-/* Project description */
 .project-description {
     font-size: 14px;
-    color: #333;
+    color: #666;
     margin-top: 10px;
-    text-align: center;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Vacation App Special Styles */
+.project img {
+    margin-bottom: 10px; /* Adds space below the image */
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .social-links img {
+        width: 40px;
+        height: 40px;
+    }
 }
