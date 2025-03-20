@@ -1,83 +1,52 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
     text-align: center;
 }
 
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 20%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Social media links */
+.social-links {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-p {
-    max-width: 800px;
-    margin: 10px auto;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
 }
 
-strong {
-    color: #222;
+.social-links img {
+    width: 50px;
+    height: 50px;
 }
 
-a {
-    color: #3498db;
-    text-decoration: none;
+/* Scrolling text */
+.scrolling-text p {
     font-weight: bold;
-}
-
-a:hover {
-    color: #2980b9;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.a {
-    text-decoration: underline;
-}
-
-
-.scrolling-text {
     white-space: nowrap;
     overflow: hidden;
-    width: 100%;
+}
+
+/* Project container */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center projects */
+    gap: 20px; /* Space between projects */
+}
+
+/* Individual project box */
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-size: 2em;
-    color: #333;
-    position: relative;
+    width: 200px; /* Equal width for all */
 }
 
-.scrolling-text p {
-    display: inline-block;
-    animation: scroll 15s linear infinite;
-}
-
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+.project img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    margin-top: 5px;
 }
