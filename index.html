@@ -8,83 +8,73 @@
 </head>
 <body>
     <div class="container">
-        <h1>Aaron Hernandez</h1>
+        <header>
+            <h1>Aaron Hernandez</h1>
+        </header>
 
         <!-- Headshot Section -->
         <div class="headshot-container">
-            <img src="resources/aaronHernandez.jpeg" alt="My Headshot" width="300" height="200">
+            <img src="resources/aaronHernandez.jpeg" alt="My Headshot" class="headshot">
         </div>
 
+        <!-- Social Links Section -->
         <div class="social-links">
             <a href="https://github.com/herna236/" target="_blank">
-                <img src="resources/githublogo.png" alt="GitHub">
+                <img src="resources/githublogo.png" alt="GitHub" class="social-icon">
             </a>
             <a href="https://www.linkedin.com/in/aaron-hernandez-a5604090/" target="_blank">
-                <img src="resources/linkedin.png" alt="LinkedIn">
+                <img src="resources/linkedin.png" alt="LinkedIn" class="social-icon">
             </a>
         </div>
 
-        <br>
-
+        <!-- Scrolling Text -->
         <div class="scrolling-text">
             <p>
                 JavaScript | Python | Node.js | React | C++ | C# | PostgreSQL | MongoDB
             </p>
         </div>
 
-        <br>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <p>I hold a bachelor's degree in social science (interdisciplinary studies) from Michigan State University and recently completed an intensive software engineering program with Springboard, where I gained hands-on experience with industry-standard technologies. I currently have 78 projects on GitHub, including JavaScript, Node.js, and React apps, and I have recently started learning C++. In my projects, I also utilize PostgreSQL and MongoDB for relational data storage. The two projects that I’m most proud of are my Visual Timer app and my News Aggregator app.</p>
+        </section>
 
-        <p>I hold a bachelor's degree in social science (interdisciplinary studies) from Michigan State University and recently completed an intensive software engineering program with Springboard, where I gained hands-on experience with industry-standard technologies. I currently have 78 projects on GitHub, that include JavaScript, Node.js, and React apps, and I have recently started learning C++. In my projects, I also utilize PostgreSQL and MongoDB for relational data storage. The two projects that I’m most proud of are my Visual Timer app and my News Aggregator app.</p>
+        <!-- Project Thumbnails Section -->
+        <section class="projects">
+            <div class="project-container">
+                <div class="project">
+                    <a href="https://github.com/herna236/Visual-Timer" target="_blank">
+                        <img src="resources/visualtimer.png" alt="Visual Timer App" class="project-thumbnail">
+                        <div class="project-title">Visual Timer App</div>
+                    </a>
+                    <p class="project-description">A time management tool for students with special needs, helping them visualize and manage tasks and transitions more effectively.</p>
+                </div>
 
-        <br>
+                <div class="project">
+                    <a href="https://github.com/herna236/News-site" target="_blank">
+                        <img src="resources/newsapp.png" alt="News Aggregator App" class="project-thumbnail">
+                        <div class="project-title">News Aggregator App</div>
+                    </a>
+                    <p class="project-description">An app that compiles news from various sources and allows users to comment on articles without native comment sections.</p>
+                </div>
 
-        <!-- Project Thumbnails with Descriptions -->
-        <div class="project-container">
-            <div class="project">
-                <a href="https://github.com/herna236/Visual-Timer" target="_blank">
-                    <strong>Visual Timer App</strong>
-                    <img src="resources/visualtimer.png" alt="Visual Timer App">
-                </a>
-                <p class="project-description">
-                    I developed this app to support students with special needs. It provides a clear, visual representation of time,
-                    helping users manage tasks and transitions more effectively.
-                </p>
-            </div>
+                <div class="project">
+                    <a href="https://github.com/herna236/vacation" target="_blank">
+                        <img src="resources/vacation.png" alt="Vacation App" class="project-thumbnail">
+                        <div class="project-title">Vacation App</div>
+                    </a>
+                    <p class="project-description">An app that helps travelers convert exchange rates and explore destinations with real-time data and user-friendly features.</p>
+                </div>
 
-            <div class="project">
-                <a href="https://github.com/herna236/News-site" target="_blank">
-                    <strong>News Aggregator App</strong>
-                    <img src="resources/newsapp.png" alt="News Aggregator App">
-                </a>
-                <p class="project-description">
-                    This app compiles news from multiple sources and allows users to comment on articles that lack native comment sections,
-                    promoting discussion on current events.
-                </p>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/herna236/vacation" target="_blank">
-                    <strong>Vacation App</strong><br>
-                    <img src="resources/vacation.png" alt="Vacation App" width="100" height="60">
-                </a>
-                <div class="project-description">
-                    This app helps travelers quickly convert exchange rates and explore destinations. It fetches real-time exchange rates using an API and dynamically
-                    calculates currency conversions on the frontend using JavaScript. The app also features a contact page for inquiries. This project showcases my ability
-                    to integrate third-party APIs, handle real-time data, and build user-friendly interfaces.
+                <div class="project">
+                    <a href="https://github.com/herna236/Soccer" target="_blank">
+                        <img src="resources/soccer.png" alt="Soccer Coaching Website" class="project-thumbnail">
+                        <div class="project-title">Soccer Coaching Website</div>
+                    </a>
+                    <p class="project-description">A website for a soccer coach offering private training programs, events, and contact information.</p>
                 </div>
             </div>
-
-            <div class="project">
-                <a href="https://github.com/herna236/Soccer" target="_blank">
-                    <strong>Soccer Coaching Website</strong>
-                    <img src="resources/soccer.png" alt="Soccer Coaching Website">
-                </a>
-                <p class="project-description">
-                    A website for a soccer coach specializing in private training. It provides information for players and parents
-                    about training programs, events, and contact details.
-                </p>
-            </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>
